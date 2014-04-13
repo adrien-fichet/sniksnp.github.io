@@ -1,0 +1,49 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.875em;
+	color: #252525;
+	line-height: 21px;
+	margin: 10px;
+	background-color: #EEE;
+}
+
+a {
+    color: #252525;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-flow: column;
+    }
+    header div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+header div {
+    margin: 10px;
+}
+
+header h1 {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+header img {
+    width: 100px;
+}
+
+header div:nth-child(2) {
+    max-width: 370px;
+}
