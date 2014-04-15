@@ -1,10 +1,10 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 0.875em;
-	color: #252525;
-	line-height: 21px;
-	margin: 10px;
-	background-color: #EEE;
+    font-size: 0.875em;
+    color: #252525;
+    line-height: 21px;
+    margin: 0px;
+    background-color: #EEEEEE;
 }
 
 a {
@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding: 10px;
 }
 
 @media (max-width: 550px) {
@@ -37,4 +38,16 @@ header h1 {
 
 header div:nth-child(2) {
     max-width: 370px;
+}
+
+section {
+    padding: 10px;
+}
+
+section:nth-child(2) {
+    background-color: #b4ced5;
+}
+
+section:nth-child(3) {
+    background-color: #b8eac5;
 }
