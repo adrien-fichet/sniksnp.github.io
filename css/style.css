@@ -51,3 +51,15 @@ section:nth-child(2) {
 section:nth-child(3) {
     background-color: #b8eac5;
 }
+
+section article ul {
+    padding-left: 20px;
+}
+
+section article h3 {
+    margin: 0px;
+}
+
+section article p {
+    margin-top: 0px;
+}
