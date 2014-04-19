@@ -16,7 +16,6 @@ header {
     flex-flow: row wrap;
     align-items: center;
     padding: 10px;
-    background-color: #eeeeee;
 }
 
 header div {
@@ -46,7 +45,6 @@ header div:nth-child(2) {
 
 section {
     padding: 10px;
-    background-color: #eeeeee;
 }
 
 section:nth-child(even) {
