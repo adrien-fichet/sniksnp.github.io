@@ -31,7 +31,13 @@ header div:nth-child(2) {
     max-width: 600px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 550px) {
+    header div:nth-child(2) {
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
     header {
         flex-flow: column;
     }
