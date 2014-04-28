@@ -30,6 +30,11 @@ header div {
 header h1 {
     margin: 0px;
     margin-top: 10px;
+    display: inline-block;
+}
+
+header span {
+    margin-left: 10px;
 }
 
 header div:nth-child(2) {
