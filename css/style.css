@@ -12,6 +12,10 @@ a {
     color: #333333;
 }
 
+.center {
+    text-align: center;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -47,6 +51,9 @@ header div:nth-child(2) {
     }
     header div:nth-child(2) {
         width: 100%;
+    }
+    .center img {
+        width: 80%;
     }
 }
 

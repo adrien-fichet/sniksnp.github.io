@@ -6,6 +6,7 @@
     <meta name="description" content="sniksnp" />
     <meta name="author" content="sniksnp" />
     <title>sniksnp</title>
+    <link rel="icon" href="im/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,7 +16,13 @@
     <header>
         <div><img src="im/face.png" alt="" /></div>
         <div>
-            <h1>@<a href="https://github.com/sniksnp">sniksnp</a></h1>
+            <h1>
+                sniksnp
+                <a href="mailto:sniksnp@gmail.com"><img src="im/gmail.jpg" alt="" /></a>
+                <a href="https://github.com/sniksnp"><img src="im/github.png" alt="" /></a>
+                <a href="https://twitter.com/sniksnp"><img src="im/twitter.png" alt="" /></a>
+                <a href="http://www.reddit.com/user/sniksnp"><img src="im/reddit.png" alt="" /></a>
+            </h1>
             <p>
                 Hi! I'm a Computer Science Master's Degree student living in France, currently
                 working as an intern in a french IT consulting company. I'm interested in learning Scala,
@@ -34,14 +41,44 @@
                         [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
                     </h3>
                     <p>
-                        This is a sliding puzzle web application written in vanilla JS. I'm doing this project for
-                        fun, and also to familiarize myself with web applications performance
+                        This is a sliding puzzle web application written in vanilla JS and HTML5. I'm doing this
+                        project for fun, and also to familiarize myself with web applications performance
                         problems, unit testing in Javascript, and various web technologies. The main goal is to develop
                         a functionality allowing the user to play on any image of her choice,
                         with the web application completely running on the client side. The source code is
                         automatically minified on push using Grunt and a custom Python script, and then deployed by
                         <a href="https://travis-ci.org/sniksnp/image-slider-game">Travis CI</a> to
                         <a href="http://sniksnp.github.io/image-slider-game">sniksnp.github.io/image-slider-game</a>.
+                    </p>
+                    <p class="center"><img src="im/image-slider-game.jpg" alt=""></p>
+                </li>
+                <li>
+                    <h3>Performance testing of a REST Web service with Gatling</h3>
+                    <p>
+                        This is my graduation project. I'm developing a Java/Scala hybrid application to automate
+                        performance testing of the REST Web service of an integrated library system
+                        marketed as a SaaS. The goal of the project is to find how many simultaneous users
+                        the integrated library system can sustain, in order to adapt the production
+                        infrastructure as the number of customers grow.
+                    </p>
+                    <p class="center"><img src="im/gatling.png" alt="" /></p>
+                    <p>
+                        I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
+                        tool written in Scala, since it is well suited to test a Web service and it makes tests easy to
+                        maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
+                        easy to interact with a Java application. The project consists in 3 Java CLI applications
+                        organized in Maven modules, used to either restore a test environment
+                        from multiple MySQL dumps, generate random test data from a database, or run the performance
+                        tests and generate test results. I also wrote a monitoring script which is executed
+                        while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage
+                        of the different VMs of the test environment) into the results from Gatling.
+                    </p>
+                    <p>
+                        The main challenges of this project are to produce meaningful test data, and to find how to
+                        simulate real users behaviors by only sending and receiving Web service requests. Even though
+                        I'm part of an agile team of 8 developers, I'm working on performance tests individually but
+                        that obviously doesn't prevent me from suggesting new functionalities or discussing the progress
+                        of the project with the other team members.
                     </p>
                 </li>
                 <li>
@@ -53,6 +90,28 @@
                         are generated using Cobertura, and are automatically pushed to
                         <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
                     </p>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h1>Other projects</h1>
+        <article>
+            <ul>
+                <li>
+                    <h3>Web interface to a command line tool (2013)</h3>
+                </li>
+                <li>
+                    <h3>Porting of an embedded system application to PC (2012)</h3>
+                </li>
+                <li>
+                    <h3>SQLite DB Viewer (2012)</h3>
+                </li>
+                <li>
+                    <h3>Typing game (2011)</h3>
+                </li>
+                <li>
+                    <h3>iPhone and iPad applications development (2011)</h3>
                 </li>
             </ul>
         </article>
