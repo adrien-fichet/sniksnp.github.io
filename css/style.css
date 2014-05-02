@@ -66,6 +66,7 @@ header div:nth-child(2) {
 
 section {
     padding: 10px;
+    padding-right: 20px;
 }
 
 section:nth-child(even) {
@@ -73,7 +74,7 @@ section:nth-child(even) {
 }
 
 section article ul {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 section article h3 {

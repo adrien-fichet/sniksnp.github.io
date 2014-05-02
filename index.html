@@ -44,7 +44,8 @@
                     <p>
                         This is a sliding puzzle web application written in vanilla JS and HTML5. I'm doing this
                         project for fun, and also to familiarize myself with web applications performance
-                        problems, unit testing in Javascript, and various web technologies. The main goal is to develop
+                        problems, unit and behavioral testing in Javascript, and various web technologies.
+                        The main goal is to develop
                         a functionality allowing the user to play on any image of her choice,
                         with the web application completely running on the client side. The source code is
                         automatically minified on push using Grunt and a custom Python script, and then deployed by
@@ -117,6 +118,15 @@
                     <p class="center">
                         <img src="https://raw.githubusercontent.com/sniksnp/typing_game/master/im/screenshot.jpg"
                              alt="" />
+                    </p>
+                    <p>
+                        I had used py2exe to create a standalone Windows executable of the application,
+                        but unfortunately, py2exe doesn't support Python 3+. PyInstaller seems to be
+                        a good alternative to py2exe, but it <a href="http://www.pyinstaller.org/roadmap"> doesn't
+                        support Python 3 either</a>, yet. Therefore I chose to use cx_Freeze and
+                        Inno Setup to distribute the application as a
+                        <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
+                        Windows installer</a>.
                     </p>
                 </li>
                 <li>
