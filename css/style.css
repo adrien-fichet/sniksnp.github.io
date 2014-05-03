@@ -99,7 +99,7 @@ section article p {
     display: flex;
     align-items: flex-start;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #tools div {
