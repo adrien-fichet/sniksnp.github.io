@@ -18,6 +18,11 @@ a {
     text-align: center;
 }
 
+.center img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
