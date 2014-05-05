@@ -47,6 +47,9 @@ header div:nth-child(2) {
     header div:nth-child(2) {
         width: 70%;
     }
+    .center img {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 550px) {
