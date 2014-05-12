@@ -61,8 +61,8 @@
                     </p>
                     <p>
                         The main challenges of this project are to produce meaningful test data, and to find how to
-                        simulate real users behaviors by only sending and receiving Web service requests. Even though
-                        I'm part of an agile team of 8 developers, I'm working on performance tests individually but
+                        simulate real users behaviors by only sending and receiving Web service requests. Despite
+                        being part of an agile team of 8 developers, I'm working on performance tests individually but
                         that obviously doesn't prevent me from suggesting new functionalities or discussing the progress
                         of the project with the other team members.
                     </p>
@@ -149,7 +149,26 @@
                 <li>
                     <h3>Porting of an embedded system application to PC (2012)</h3>
                     <p>
-
+                        My end-of-bachelor's degree internship consisted in porting a software installed
+                        on parking pay-and-display machines to PC. This software, written in C,
+                        was designed to work on ARM7 processors. My role was to modify it so that
+                        it could be run on x86 processors. This internship lasted 6 months.
+                    </p>
+                    <p>
+                        The aim of porting the application to PC was to facilitate the
+                        development of functional tests, therefore it was not judged useful to completely
+                        rewrite all the low-level components of the embedded
+                        system (based on OpenBSD 3.8). Instead, I mocked the interfaces of the pay-and-display
+                        machine peripherals and modified the code of the application in order to use
+                        PC-compatible libraries, such as pthread instead of a proprietary multithreading library.
+                    </p>
+                    <p>
+                        Although this project was rather tedious, I managed to achieve most of its objectives.
+                        Unfortunately, I couldn't mock all of the peripherals since some of them were
+                        really complex and sometimes proprietary (the card reader for example). All in all, it was
+                        a great way to discover the world of embedded software and to face interesting challenges
+                        unique to it, such as being limited to only 128k of disk space. That was also the first
+                        time I worked with an agile team (8 members, mainly XP).
                     </p>
                 </li>
                 <li>
