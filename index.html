@@ -38,33 +38,38 @@
         <article>
             <ul>
                 <li>
-                    <h3>Performance testing of a REST Web service with Gatling</h3>
+                    <h3>Application Lifecycle Management Integration Tool development</h3>
                     <p>
-                        This is the first part of my end-of-degree internship.
-                        I'm developing a Java/Scala hybrid application
-                        to automate performance testing of the REST Web service of an integrated library system (ILS)
-                        marketed as a SaaS. The goal of the project is to find how many simultaneous users
-                        the integrated library system can sustain, in order to adapt the production
-                        infrastructure as the number of customers grow.
+                        I'm currently developing a Java application to synchronize the different
+                        application lifecycle management (ALM) tools used by
+                        the agile team I work with during the last 3 months of my end-of-degree internship.
+                        These tools are
+                        <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
+                        <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
+                        <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
+                        <a href="https://subversion.apache.org">Subversion</a> (version control system).
                     </p>
-                    <p class="center"><img src="im/gatling.png" alt="" /></p>
-                    <p>
-                        I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
-                        tool written in Scala, since it is well suited to test a Web service and it makes tests easy to
-                        maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
-                        easy to interact with a Java application. The project consists in 3 Java CLI applications
-                        organized in Maven modules, used to either restore a test environment
-                        from multiple MySQL dumps, generate random test data from a database, or run the performance
-                        tests and generate test results. I also wrote a monitoring script which is executed
-                        while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage
-                        of the different VMs of the test environment) into the results from Gatling.
+                    <p class="center">
+                        <img src="im/youtrack.png" alt="" />
+                        <img src="im/pivotal.png" alt="" />
+                        <img src="im/jenkins.png" alt="" />
+                        <img src="im/svn.png" alt="" />
                     </p>
                     <p>
-                        The main challenges of this project are to produce meaningful test data, and to find how to
-                        simulate real users behaviors by only sending and receiving Web service requests. Despite
-                        being part of an agile team of 8 developers, I'm working on performance tests individually but
-                        that obviously doesn't prevent me from suggesting new functionalities or discussing the progress
-                        of the project with the other team members.
+                        A PHP application developed by a previous intern already exists to synchronize these tools.
+                        Unfortunately, it doesn't work with the most recent APIs of YouTrack and Pivotal Tracker
+                        and is rather hard to maintain.
+                        Rewriting this PHP application in Java has multiple advantages: first,
+                        it will be easier to maintain since the agile team members are more familiar with
+                        Java, and secondly, it will be designed to easily adapt to the most recent YouTrack and Pivotal
+                        Tracker APIs.
+                    </p>
+                    <p>
+                        Once the synchronization tool is ported to Java, I will develop a web application
+                        built on top of it which will show statistics related to the agile development process, such
+                        as the number of issues reopened during
+                        each sprint. This web application will be embedded into the Java application using
+                        Jetty and the frontend will use ExtJS 5.
                     </p>
                 </li>
                 <li>
@@ -98,6 +103,37 @@
         <h1>Other projects</h1>
         <article>
             <ul>
+                <li>
+                    <h3>Performance testing of a REST web service with Gatling</h3>
+                    <p>
+                        This was the project I worked on during the first part of my end-of-degree
+                        internship (3 first months out of 6). I developed a Java/Scala hybrid application
+                        to automate performance testing of the REST web service of an integrated library system (ILS)
+                        marketed as a SaaS. The goal was to find how many simultaneous users
+                        the integrated library system could sustain, in order to adapt the production
+                        infrastructure as the number of customers grow.
+                    </p>
+                    <p class="center"><img src="im/gatling.png" alt="" /></p>
+                    <p>
+                        I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
+                        tool written in Scala, since it is well suited to test a web service and it makes tests easy to
+                        maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
+                        easy to interact with a Java application. The project consists in 3 Java CLI applications
+                        organized in Maven modules, used to either restore a test environment
+                        from multiple MySQL and Solr dumps, generate random test data from a database,
+                        and run the performance tests and generate test results.
+                        I also wrote a monitoring script which is executed
+                        while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
+                        of the different VMs of the test environment into the results from Gatling.
+                    </p>
+                    <p>
+                        The main challenges of this project were to produce meaningful test data, and to
+                        simulate real users behaviors by only sending and receiving web service requests. Despite
+                        being part of an agile team of 8 developers, I worked on performance tests individually but
+                        that didn't prevent me from suggesting new functionalities or discussing the progress
+                        of the project with the other team members.
+                    </p>
+                </li>
                 <li>
                     <h3>
                         <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
@@ -294,7 +330,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Web</h3>
+                <h3>web</h3>
                 <ul>
                     <li>Firefox</li>
                     <li>Chrome</li>

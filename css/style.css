@@ -68,7 +68,7 @@ header div:nth-child(2) {
         width: 100%;
     }
     .center img {
-        width: 80%;
+        max-width: 80%;
     }
 }
 
