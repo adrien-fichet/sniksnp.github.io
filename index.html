@@ -36,255 +36,229 @@
     <section>
         <h1>Projects I'm currently working on</h1>
         <article>
-            <ul>
-                <li>
-                    <h3>Application Lifecycle Management Integration Tool development</h3>
-                    <p>
-                        I'm currently developing a Java application to synchronize the different
-                        application lifecycle management (ALM) tools used by
-                        the agile team I work with during the last 3 months of my end-of-degree internship.
-                        These tools are
-                        <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
-                        <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
-                        <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
-                        <a href="https://subversion.apache.org">Subversion</a> (version control system).
-                    </p>
-                    <p class="center">
-                        <img src="im/youtrack.png" alt="" />
-                        <img src="im/pivotal.png" alt="" />
-                        <img src="im/jenkins.png" alt="" />
-                        <img src="im/svn.png" alt="" />
-                    </p>
-                    <p>
-                        A PHP application developed by a previous intern already exists to synchronize these tools.
-                        Unfortunately, it doesn't work with the most recent APIs of YouTrack and Pivotal Tracker
-                        and is rather hard to maintain.
-                        Rewriting this PHP application in Java has multiple advantages: first,
-                        it will be easier to maintain since the agile team members are more familiar with
-                        Java, and secondly, it will be designed to easily adapt to the most recent YouTrack and Pivotal
-                        Tracker APIs.
-                    </p>
-                    <p>
-                        While the synchronization tool is ported to Java, I'm also developing a web application
-                        built on top of the synchronization tool which will show statistics related to the
-                        agile development process, such as the number of issues reopened during
-                        each sprint. This web application is directly embedded into the Java application using
-                        <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend uses
-                        <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/sniksnp/sqlite_db_viewer">sniksnp/sqlite_db_viewer</a></h3>
-                    <p>
-                        SQLite DB Viewer was an GUI application I developed with a friend in 2012 as part of an
-                        university project. It was written in Python 2.6 with PyQt. As its name suggest, its
-                        goal was to provide a visualization of the content of a SQLite database (data and structure).
-                        We also developed a functionality that creates an entity-relationship diagram from
-                        the database structure (similar to the "reverse engineering" functionality in MySQL Workbench),
-                        which facilitates the general understanding of the database structure.
-                    </p>
-                    <p>
-                        I'm currently rewriting this application from scratch using Java 8, Java FX and jOOQ.
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
-                    <p>
-                        This is the code I write while reading JUnit Recipes, which consists in unit tests
-                        from the book and some ideas I have along the way. This project is built using Maven on
-                        <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
-                        are generated using Cobertura, and are automatically pushed to
-                        <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
-                    </p>
-                </li>
-            </ul>
+            <h3>Application Lifecycle Management Integration Tool development</h3>
+            <p>
+                I'm currently developing a Java application to synchronize the different
+                application lifecycle management (ALM) tools used by
+                the agile team I work with during the last 3 months of my end-of-degree internship.
+                These tools are
+                <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
+                <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
+                <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
+                <a href="https://subversion.apache.org">Subversion</a> (version control system).
+            </p>
+            <p class="center">
+                <img src="im/youtrack.png" alt="" />
+                <img src="im/pivotal.png" alt="" />
+                <img src="im/jenkins.png" alt="" />
+                <img src="im/svn.png" alt="" />
+            </p>
+            <p>
+                A PHP application developed by a previous intern already exists to synchronize these tools.
+                Unfortunately, it doesn't work with the most recent APIs of YouTrack and Pivotal Tracker
+                and is rather hard to maintain.
+                Rewriting this PHP application in Java has multiple advantages: first,
+                it will be easier to maintain since the agile team members are more familiar with
+                Java, and secondly, it will be designed to easily adapt to the most recent YouTrack and Pivotal
+                Tracker APIs.
+            </p>
+            <p>
+                While the synchronization tool is ported to Java, I'm also developing a web application
+                built on top of the synchronization tool which will show statistics related to the
+                agile development process, such as the number of issues reopened during
+                each sprint. This web application is directly embedded into the Java application using
+                <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend uses
+                <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
+            </p>
+            <h3><a href="https://github.com/sniksnp/sqlite_db_viewer">sniksnp/sqlite_db_viewer</a></h3>
+            <p>
+                SQLite DB Viewer was an GUI application I developed with a friend in 2012 as part of an
+                university project. It was written in Python 2.6 with PyQt. As its name suggest, its
+                goal was to provide a visualization of the content of a SQLite database (data and structure).
+                We also developed a functionality that creates an entity-relationship diagram from
+                the database structure (similar to the "reverse engineering" functionality in MySQL Workbench),
+                which facilitates the general understanding of the database structure.
+            </p>
+            <p>
+                I'm currently rewriting this application from scratch using Java 8, Java FX and jOOQ.
+            </p>
+            <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
+            <p>
+                This is the code I write while reading JUnit Recipes, which consists in unit tests
+                from the book and some ideas I have along the way. This project is built using Maven on
+                <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
+                are generated using Cobertura, and are automatically pushed to
+                <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
+            </p>
         </article>
     </section>
     <section>
         <h1>Previous projects</h1>
         <article>
-            <ul>
-                <li>
-                    <h3>Performance testing of a REST web service with Gatling (2014)</h3>
-                    <p>
-                        This was the first part of my end-of-degree internship (3 first months out of 6).
-                        I developed a Java/Scala hybrid application
-                        to automate performance testing of the REST web service of an integrated library system (ILS)
-                        marketed as a SaaS. The goal was to find how many simultaneous users
-                        the integrated library system could sustain, in order to adapt the production
-                        infrastructure as the number of customers grow.
-                    </p>
-                    <p class="center"><img src="im/gatling.png" alt="" /></p>
-                    <p>
-                        I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
-                        tool written in Scala, since it is well suited to test a web service and it makes tests easy to
-                        maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
-                        easy to interact with a Java application. The project consists in 3 Java CLI applications
-                        organized in Maven modules, used to either restore a test environment
-                        from multiple MySQL and Solr dumps, generate random test data from a database,
-                        and run the performance tests and generate test results.
-                        I also wrote a monitoring script which is executed
-                        while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
-                        of the different VMs of the test environment into the results from Gatling.
-                    </p>
-                    <p>
-                        The main challenges of this project were to produce meaningful test data, and to
-                        simulate real users behaviors by only sending and receiving web service requests. Despite
-                        being part of an agile team of 8 developers, I worked on performance tests individually but
-                        that didn't prevent me from suggesting new functionalities or discussing the progress
-                        of the project with the other team members.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
-                        [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
-                    </h3>
-                    <p>
-                        This is a sliding puzzle web application written in vanilla JS and HTML5. I started this
-                        project for fun and also to familiarize myself with web applications performance
-                        problems, testing in Javascript, and various web technologies.
-                        The main goal was to develop a functionality allowing the user to play on any image of her
-                        choice, with the web application completely running on the client side. The source code is
-                        automatically minified on push using Grunt and a custom Python script, and then deployed by
-                        <a href="https://travis-ci.org/sniksnp/image-slider-game">Travis CI</a> to
-                        <a href="http://sniksnp.github.io/image-slider-game">sniksnp.github.io/image-slider-game</a>.
-                    </p>
-                    <p class="center"><img src="im/image-slider-game.jpg" alt="" /></p>
-                    <p>
-                        I also added the possibility to take a picture (from a webcam or a phone camera) and play on
-                        it. Last but not least, you can let the application solve the puzzle for you by clicking on
-                        the robot icon.
-                    </p>
-                </li>
-                <li>
-                    <h3>Web interface to a command line tool with Node.js and Bootstrap (2013)</h3>
-                    <p>
-                        This is by far the most interesting project I worked on at university. We had to work in
-                        a team of 2. The goal was to develop a web interface to a command line tool,
-                        created by computer scientists of our university, in order to simplify its use
-                        (SaaS instead of a complicated command line interface).
-                    </p>
-                    <p class="center"><img src="im/web_interface.jpg" alt="" /></p>
-                    <p>
-                        We chose to use Node.js
-                        since it was well suited to develop an asynchronous
-                        application such as this one, and Bootstrap/jQuery for the front end. These technologies
-                        enabled a really fast development pace: we were able to ship a prototype in
-                        only one week. We then added new functionalities on top of it, such as sending emails,
-                        input/output processing, and a <a href="http://rise4fun.com">rise4fun</a> web service.
-                        We also automated non-regression testing of the tool and wrote an extensive documentation
-                        of the web interface and the tool in itself.
-                    </p>
-                    <p>
-                        We tried to apply agile methodologies as much as we could, that helped
-                        us a lot to adapt the web application to the constant requirement changes
-                        from our product owner. It was also very interesting and rewarding to get
-                        suggestions and positive feedback from the end users throughout the project.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        <a href="https://github.com/sniksnp/PANDATIME">sniksnp/PANDATIME</a> (2013)
-                        [<a href="http://sniksnp.github.io/PANDATIME">link to soundboard</a>]
-                    </h3>
-                    <p>
-                        This web application is a soundboard I made for Teldo, one of my favourite streamers on
-                        Twitch.tv. Originally, I wanted to make a web app using sound that could work on desktop
-                        as well as on mobile web browsers, therefore I chose to use the WebAudio API instead of Flash.
-                        As a consequence, it won't work on older browsers. Even though this soundboard is very silly,
-                        I had a lot of fun developing it and seeing it being used on stream!
-                    </p>
-                    <p class="center"><img src="im/pandatime.jpg" alt="" /></p>
-                </li>
-                <li>
-                    <h3>Porting of an embedded system application to PC (2012)</h3>
-                    <p>
-                        My end-of-bachelor's degree internship consisted in porting a software installed
-                        on parking pay-and-display machines to PC. This software, written in C,
-                        was designed to work on ARM7 processors. My role was to modify it so that
-                        it could be run on x86 processors. This internship lasted 6 months.
-                    </p>
-                    <p>
-                        The aim of porting the application to PC was to facilitate the
-                        development of functional tests, therefore it was not judged useful to completely
-                        rewrite all the low-level components of the embedded
-                        system (based on OpenBSD 3.8). Instead, I mocked the interfaces of the pay-and-display
-                        machine peripherals and modified the code of the application in order to use
-                        PC-compatible libraries, such as pthread instead of a proprietary multithreading library.
-                    </p>
-                    <p>
-                        Although this project was rather tedious, I managed to achieve most of its objectives.
-                        Unfortunately, I couldn't mock all of the peripherals since some of them were
-                        really complex and sometimes proprietary (the card reader for example). All in all, it was
-                        a great way to discover the world of embedded software and to face interesting challenges
-                        unique to it, such as being limited to only 128k of disk space. That was also the first
-                        time I worked with an agile team (8 members, mainly XP).
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/sniksnp/hadouken_jump">sniksnp/hadouken_jump</a> (2012)</h3>
-                    <p>
-                        Hadouken Jump is a simple game I made in one day after playing SSF4 with a friend
-                        whose playstyle could be summed up as "spam-hadoukens-as-fast-as-you-can".
-                        The only aim of the game is therefore to jump over hadoukens. It was coded in Python
-                        with Panda 3D (a game engine I was experimenting with at that time).
-                    </p>
-                    <p class="center">
-                        <img src="https://raw.githubusercontent.com/sniksnp/hadouken_jump/master/im/Screenshot_1.jpg"
-                             alt="" />
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="https://github.com/sniksnp/typing_game">sniksnp/typing_game</a> (2011)</h3>
-                    <p>
-                        This is a typing game I wrote while learning Qt and Python. It was
-                        originally written in Python 2.7 with PyQt4, and I recently ported it to Python 3.3/PyQt5.
-                    </p>
-                    <p class="center">
-                        <img src="https://raw.githubusercontent.com/sniksnp/typing_game/master/im/screenshot.jpg"
-                             alt="" />
-                    </p>
-                    <p>
-                        I had used py2exe to create a standalone Windows executable of the application,
-                        but unfortunately, py2exe doesn't support Python 3+. PyInstaller seems to be
-                        a good alternative to py2exe, but it <a href="http://www.pyinstaller.org/roadmap"> doesn't
-                        support Python 3 either</a> (yet). Therefore I chose to use cx_Freeze and
-                        Inno Setup to distribute the application as a
-                        <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
-                        Windows installer</a>.
-                    </p>
-                </li>
-                <li>
-                    <h3>iPhone and iPad applications development (2011)</h3>
-                    <p>
-                        My first internship as a developer consisted in developing an iPhone application for
-                        a bus company and making it available on the App Store. The application can be used
-                        to calculate a route between 2 bus stops, find the
-                        nearest bus stops from the current location, display bus lines on a map
-                        and buy a ticket by SMS.
-                    </p>
-                    <p class="center">
-                        <img src="im/iphone1.jpg" alt="" />
-                        <img src="im/iphone2.jpg" alt="" />
-                    </p>
-                    <p>
-                        Informations about the bus network are provided by a real-time passenger information system
-                        (PIS). For instance, the users can search a bus stop by name and instantly know
-                        when the next buses will pass. I had the responsability to publish this application on the
-                        App Store, which took quite some time but was successful. Unfortunately, this iPhone
-                        application is not maintained anymore and since it was developed for iOS 4, it probably
-                        won't work on current iPhone devices (iOS 7).
-                    </p>
-                    <p>
-                        I've been hired by the bus company at the end of my internship for 1 month in order
-                        to develop a completely different application, for iPad, used by some of the bus
-                        company employees. Basically, its
-                        goal was to track a user's position and to send these positions to a FTP server
-                        in KMZ format.
-                    </p>
-                </li>
-            </ul>
+            <h3>Performance testing of a REST web service with Gatling (2014)</h3>
+            <p>
+                This was the first part of my end-of-degree internship (3 first months out of 6).
+                I developed a Java/Scala hybrid application
+                to automate performance testing of the REST web service of an integrated library system (ILS)
+                marketed as a SaaS. The goal was to find how many simultaneous users
+                the integrated library system could sustain, in order to adapt the production
+                infrastructure as the number of customers grow.
+            </p>
+            <p class="center"><img src="im/gatling.png" alt="" /></p>
+            <p>
+                I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
+                tool written in Scala, since it is well suited to test a web service and it makes tests easy to
+                maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
+                easy to interact with a Java application. The project consists in 3 Java CLI applications
+                organized in Maven modules, used to either restore a test environment
+                from multiple MySQL and Solr dumps, generate random test data from a database,
+                and run the performance tests and generate test results.
+                I also wrote a monitoring script which is executed
+                while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
+                of the different VMs of the test environment into the results from Gatling.
+            </p>
+            <p>
+                The main challenges of this project were to produce meaningful test data, and to
+                simulate real users behaviors by only sending and receiving web service requests. Despite
+                being part of an agile team of 8 developers, I worked on performance tests individually but
+                that didn't prevent me from suggesting new functionalities or discussing the progress
+                of the project with the other team members.
+            </p>
+            <h3>
+                <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
+                [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
+            </h3>
+            <p>
+                This is a sliding puzzle web application written in vanilla JS and HTML5. I started this
+                project for fun and also to familiarize myself with web applications performance
+                problems, testing in Javascript, and various web technologies.
+                The main goal was to develop a functionality allowing the user to play on any image of her
+                choice, with the web application completely running on the client side. The source code is
+                automatically minified on push using Grunt and a custom Python script, and then deployed by
+                <a href="https://travis-ci.org/sniksnp/image-slider-game">Travis CI</a> to
+                <a href="http://sniksnp.github.io/image-slider-game">sniksnp.github.io/image-slider-game</a>.
+            </p>
+            <p class="center"><img src="im/image-slider-game.jpg" alt="" /></p>
+            <p>
+                I also added the possibility to take a picture (from a webcam or a phone camera) and play on
+                it. Last but not least, you can let the application solve the puzzle for you by clicking on
+                the robot icon.
+            </p>
+            <h3>Web interface to a command line tool with Node.js and Bootstrap (2013)</h3>
+            <p>
+                This is by far the most interesting project I worked on at university. We had to work in
+                a team of 2. The goal was to develop a web interface to a command line tool,
+                created by computer scientists of our university, in order to simplify its use
+                (SaaS instead of a complicated command line interface).
+            </p>
+            <p class="center"><img src="im/web_interface.jpg" alt="" /></p>
+            <p>
+                We chose to use Node.js
+                since it was well suited to develop an asynchronous
+                application such as this one, and Bootstrap/jQuery for the front end. These technologies
+                enabled a really fast development pace: we were able to ship a prototype in
+                only one week. We then added new functionalities on top of it, such as sending emails,
+                input/output processing, and a <a href="http://rise4fun.com">rise4fun</a> web service.
+                We also automated non-regression testing of the tool and wrote an extensive documentation
+                of the web interface and the tool in itself.
+            </p>
+            <p>
+                We tried to apply agile methodologies as much as we could, that helped
+                us a lot to adapt the web application to the constant requirement changes
+                from our product owner. It was also very interesting and rewarding to get
+                suggestions and positive feedback from the end users throughout the project.
+            </p>
+            <h3>
+                <a href="https://github.com/sniksnp/PANDATIME">sniksnp/PANDATIME</a> (2013)
+                [<a href="http://sniksnp.github.io/PANDATIME">link to soundboard</a>]
+            </h3>
+            <p>
+                This web application is a soundboard I made for Teldo, one of my favourite streamers on
+                Twitch.tv. Originally, I wanted to make a web app using sound that could work on desktop
+                as well as on mobile web browsers, therefore I chose to use the WebAudio API instead of Flash.
+                As a consequence, it won't work on older browsers. Even though this soundboard is very silly,
+                I had a lot of fun developing it and seeing it being used on stream!
+            </p>
+            <p class="center"><img src="im/pandatime.jpg" alt="" /></p>
+            <h3>Porting of an embedded system application to PC (2012)</h3>
+            <p>
+                My end-of-bachelor's degree internship consisted in porting a software installed
+                on parking pay-and-display machines to PC. This software, written in C,
+                was designed to work on ARM7 processors. My role was to modify it so that
+                it could be run on x86 processors. This internship lasted 6 months.
+            </p>
+            <p>
+                The aim of porting the application to PC was to facilitate the
+                development of functional tests, therefore it was not judged useful to completely
+                rewrite all the low-level components of the embedded
+                system (based on OpenBSD 3.8). Instead, I mocked the interfaces of the pay-and-display
+                machine peripherals and modified the code of the application in order to use
+                PC-compatible libraries, such as pthread instead of a proprietary multithreading library.
+            </p>
+            <p>
+                Although this project was rather tedious, I managed to achieve most of its objectives.
+                Unfortunately, I couldn't mock all of the peripherals since some of them were
+                really complex and sometimes proprietary (the card reader for example). All in all, it was
+                a great way to discover the world of embedded software and to face interesting challenges
+                unique to it, such as being limited to only 128k of disk space. That was also the first
+                time I worked with an agile team (8 members, mainly XP).
+            </p>
+            <h3><a href="https://github.com/sniksnp/hadouken_jump">sniksnp/hadouken_jump</a> (2012)</h3>
+            <p>
+                Hadouken Jump is a simple game I made in one day after playing SSF4 with a friend
+                whose playstyle could be summed up as "spam-hadoukens-as-fast-as-you-can".
+                The only aim of the game is therefore to jump over hadoukens. It was coded in Python
+                with Panda 3D (a game engine I was experimenting with at that time).
+            </p>
+            <p class="center">
+                <img src="https://raw.githubusercontent.com/sniksnp/hadouken_jump/master/im/Screenshot_1.jpg"
+                     alt="" />
+            </p>
+            <h3><a href="https://github.com/sniksnp/typing_game">sniksnp/typing_game</a> (2011)</h3>
+            <p>
+                This is a typing game I wrote while learning Qt and Python. It was
+                originally written in Python 2.7 with PyQt4, and I recently ported it to Python 3.3/PyQt5.
+            </p>
+            <p class="center">
+                <img src="https://raw.githubusercontent.com/sniksnp/typing_game/master/im/screenshot.jpg"
+                     alt="" />
+            </p>
+            <p>
+                I had used py2exe to create a standalone Windows executable of the application,
+                but unfortunately, py2exe doesn't support Python 3+. PyInstaller seems to be
+                a good alternative to py2exe, but it <a href="http://www.pyinstaller.org/roadmap"> doesn't
+                support Python 3 either</a> (yet). Therefore I chose to use cx_Freeze and
+                Inno Setup to distribute the application as a
+                <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
+                Windows installer</a>.
+            </p>
+            <h3>iPhone and iPad applications development (2011)</h3>
+            <p>
+                My first internship as a developer consisted in developing an iPhone application for
+                a bus company and making it available on the App Store. The application can be used
+                to calculate a route between 2 bus stops, find the
+                nearest bus stops from the current location, display bus lines on a map
+                and buy a ticket by SMS.
+            </p>
+            <p class="center">
+                <img src="im/iphone1.jpg" alt="" />
+                <img src="im/iphone2.jpg" alt="" />
+            </p>
+            <p>
+                Informations about the bus network are provided by a real-time passenger information system
+                (PIS). For instance, the users can search a bus stop by name and instantly know
+                when the next buses will pass. I had the responsability to publish this application on the
+                App Store, which took quite some time but was successful. Unfortunately, this iPhone
+                application is not maintained anymore and since it was developed for iOS 4, it probably
+                won't work on current iPhone devices (iOS 7).
+            </p>
+            <p>
+                I've been hired by the bus company at the end of my internship for 1 month in order
+                to develop a completely different application, for iPad, used by some of the bus
+                company employees. Basically, its
+                goal was to track a user's position and to send these positions to a FTP server
+                in KMZ format.
+            </p>
         </article>
     </section>
     <section>
