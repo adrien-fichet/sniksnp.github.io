@@ -115,14 +115,15 @@
                 and run the performance tests and generate test results.
                 I also wrote a monitoring script which is executed
                 while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
-                of the different VMs of the test environment into the results from Gatling.
+                of the different VMs of the test environment into the results from Gatling. The monitoring of
+                the ILS backend, provided by <a href="https://code.google.com/p/javamelody">JavaMelody</a>,
+                is also integrated into these results.
             </p>
             <p>
                 The main challenges of this project were to produce meaningful test data, and to
-                simulate real users behaviors by only sending and receiving web service requests. Despite
-                being part of an agile team of 8 developers, I worked on performance tests individually but
-                that didn't prevent me from suggesting new functionalities or discussing the progress
-                of the project with the other team members.
+                simulate real users behaviors by only sending and receiving web service requests.
+                I worked in an agile team of 8 developers and also closely with the system admin team in order
+                to execute the performance tests on a pre-production environment.
             </p>
             <h3>
                 <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
