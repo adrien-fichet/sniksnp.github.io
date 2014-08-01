@@ -70,6 +70,34 @@
                 <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend uses
                 <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
             </p>
+            <h3><a href="https://github.com/sniksnp/lescastcodeurs.com">sniksnp/lescastcodeurs.com</a></h3>
+            <p>
+                "Les Cast Codeurs" is a french Java podcast hosted by Emmanuel Bernard, Arnaud Héritier, Guillaume
+                Laforge, Antonio Goncalves and Vincent Massol. It is primarly focused on the Java ecosystem but
+                also deals with various other topics. It is my favourite podcast and I heavily recommend it
+                to anyone interested in Java.
+            </p>
+            <p class="center">
+                <img src="http://lescastcodeurs.com/images/logo_carre_transparent_150height.png" alt="" />
+            </p>
+            <p>
+                As a way to thank them for doing this podcast, I suggested to improve their website
+                (<a href="http://lescastcodeurs.com">lescastcodeurs.com</a>). Its source code is
+                <a href="https://github.com/lescastcodeurs/lescastcodeurs.com">hosted on Github</a>.
+                This website is generated using <a href="http://awestruct.org/">Awestruct</a>, and consists in
+                blog posts (one for each podcast) and additional information about the podcast.
+            </p>
+            <p>
+                At first, I converted all the old blog posts written in Erb to Markdown in order to have
+                a consistent content across the site, since the new blog posts are written in Markdown. I
+                used different regular expressions to do that, for example:
+            </p>
+            <pre>sed -r 's!&lt;a href="(.*)"&gt;(.*)&lt;/a&gt;![\2](\1)!g' blog-post.erb</pre>
+            <p>
+                to convert the HTML &lt;a&gt; tags to Markdown links. I also fixed typos and formatting
+                errors along the way. I'm currently working on re-designing the appareance of the website,
+                the goal being to make it look more "modern".
+            </p>
             <h3><a href="https://github.com/sniksnp/sqlite_db_viewer">sniksnp/sqlite_db_viewer</a></h3>
             <p>
                 SQLite DB Viewer was an GUI application I developed with a friend in 2012 as part of an
