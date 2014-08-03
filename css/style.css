@@ -8,6 +8,7 @@ body {
     background-color: #eeeeee;
     max-width: 800px;
     margin: auto;
+    word-wrap: break-word;
 }
 
 a {
