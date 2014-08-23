@@ -26,51 +26,43 @@
                 <a href="http://grooveshark.com/#!/profile/Sniksnp/27147827"><img src="im/grvshrk.png" alt="" /></a>
             </h1>
             <p>
-                Hi! I'm a Computer Science Master's Degree student living in France, currently
-                working as an intern in a french IT consulting company. I'm interested in learning Scala,
-                and improving my skills in Java. I also enjoy web development and programming
-                in Python.
+                Hi! I'm a junior software engineer living in France, currently working as a Devops in a french software
+                company. I'm interested in learning Scala and improving my skills in Java. I also enjoy web
+                development and programming in Python.
             </p>
         </div>
     </header>
     <section>
         <h1>Projects I'm currently working on</h1>
         <article>
-            <h3>Application Lifecycle Management Integration Tool development</h3>
+            <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
             <p>
-                I'm currently developing a Java application to synchronize the different
-                application lifecycle management (ALM) tools used by
-                the agile team I work with during the last 3 months of my end-of-degree internship.
-                These tools are
-                <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
-                <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
-                <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
-                <a href="https://subversion.apache.org">Subversion</a> (version control system).
+                This is the code I write while reading JUnit Recipes, which consists in unit tests
+                from the book and some ideas I have along the way. This project is built using Maven on
+                <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
+                are generated using Cobertura, and are automatically pushed to
+                <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
             </p>
-            <p class="center">
-                <img src="im/youtrack.png" alt="" />
-                <img src="im/pivotal.png" alt="" />
-                <img src="im/jenkins.png" alt="" />
-                <img src="im/svn.png" alt="" />
-            </p>
+        </article>
+        <article>
+            <h3><a href="https://github.com/sniksnp/sqlite_db_viewer">sniksnp/sqlite_db_viewer</a></h3>
             <p>
-                A PHP application developed by a previous intern already exists to synchronize these tools.
-                Unfortunately, it doesn't work with the most recent APIs of YouTrack and Pivotal Tracker
-                and is rather hard to maintain.
-                Rewriting this PHP application in Java has multiple advantages: first,
-                it will be easier to maintain since the agile team members are more familiar with
-                Java, and secondly, it will be designed to easily adapt to the most recent YouTrack and Pivotal
-                Tracker APIs.
+                SQLite DB Viewer was an GUI application I developed with a friend in 2012 as part of an
+                university project. It was written in Python 2.6 with PyQt. As its name suggest, its
+                goal was to provide a visualization of the content of a SQLite database (data and structure).
+                We also developed a functionality that creates an entity-relationship diagram from
+                the database structure (similar to the "reverse engineering" functionality in MySQL Workbench),
+                which facilitates the general understanding of the database structure.
             </p>
             <p>
-                While the synchronization tool is ported to Java, I'm also developing a web application
-                built on top of the synchronization tool which will show statistics related to the
-                agile development process, such as the number of issues reopened during
-                each sprint. This web application is directly embedded into the Java application using
-                <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend uses
-                <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
+                I'm currently rewriting this application from scratch using Java 8, Java FX and jOOQ.
             </p>
-            <h3><a href="https://github.com/sniksnp/lescastcodeurs.com">sniksnp/lescastcodeurs.com</a></h3>
+        </article>
+    </section>
+    <section>
+        <h1>Previous projects</h1>
+        <article>
+            <h3><a href="https://github.com/sniksnp/lescastcodeurs.com">sniksnp/lescastcodeurs.com</a> (2014)</h3>
             <p>
                 "Les Cast Codeurs" is a french Java podcast hosted by Emmanuel Bernard, Arnaud Héritier, Guillaume
                 Laforge, Antonio Goncalves and Vincent Massol. It is primarly focused on the Java ecosystem but
@@ -90,38 +82,61 @@
             <p>
                 At first, I converted all the old blog posts written in Erb to Markdown in order to have
                 a consistent content across the site, since the new blog posts are written in Markdown. I
-                used different regular expressions to do that, for example:
+                used different regular expressions to achieve this, for example:
             </p>
             <pre>sed -r 's!&lt;a href="(.*)"&gt;(.*)&lt;/a&gt;![\2](\1)!g' blog-post.erb</pre>
             <p>
                 to convert the HTML &lt;a&gt; tags to Markdown links. I also fixed typos and formatting
-                errors along the way. I'm currently working on re-designing the look-and-feel of the website,
-                the goal being to make it look more "modern".
-            </p>
-            <h3><a href="https://github.com/sniksnp/sqlite_db_viewer">sniksnp/sqlite_db_viewer</a></h3>
-            <p>
-                SQLite DB Viewer was an GUI application I developed with a friend in 2012 as part of an
-                university project. It was written in Python 2.6 with PyQt. As its name suggest, its
-                goal was to provide a visualization of the content of a SQLite database (data and structure).
-                We also developed a functionality that creates an entity-relationship diagram from
-                the database structure (similar to the "reverse engineering" functionality in MySQL Workbench),
-                which facilitates the general understanding of the database structure.
+                errors along the way.
             </p>
             <p>
-                I'm currently rewriting this application from scratch using Java 8, Java FX and jOOQ.
+                Then, I re-designed the look-and-feel of the website, the goal being to make it look more "modern".
+                I updated the version of Bootstrap from 2 to 3.1,
+                improved the layout and colors a bit, and made the site responsive (which was quite easy
+                with Bootstrap). The following images are screenshots of the home page before
+                and after the redesign:
             </p>
-            <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
-            <p>
-                This is the code I write while reading JUnit Recipes, which consists in unit tests
-                from the book and some ideas I have along the way. This project is built using Maven on
-                <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
-                are generated using Cobertura, and are automatically pushed to
-                <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
+            <p class="center">
+                <img src="im/lcc-old.jpg" alt="" />
+                <img src="im/lcc-new.jpg" alt="" />
             </p>
         </article>
-    </section>
-    <section>
-        <h1>Previous projects</h1>
+        <article>
+            <h3>Application Lifecycle Management Integration Tool development (2014)</h3>
+            <p>
+                I developed a Java application to synchronize the different
+                application lifecycle management (ALM) tools used by
+                the agile team I worked with during the last 3 months of my end-of-degree internship.
+                These tools were
+                <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
+                <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
+                <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
+                <a href="https://subversion.apache.org">Subversion</a> (version control system).
+            </p>
+            <p class="center">
+                <img src="im/youtrack.png" alt="" />
+                <img src="im/pivotal.png" alt="" />
+                <img src="im/jenkins.png" alt="" />
+                <img src="im/svn.png" alt="" />
+            </p>
+            <p>
+                A PHP application developed by a previous intern already existed to synchronize these tools.
+                Unfortunately, it wasn't working with the most recent APIs of YouTrack and Pivotal Tracker
+                and was rather hard to maintain.
+                Rewriting this PHP application in Java had multiple advantages: first,
+                it would be easier to maintain since the agile team members are more familiar with
+                Java, and secondly, it would be designed to easily adapt to the most recent YouTrack and Pivotal
+                Tracker APIs.
+            </p>
+            <p>
+                While the synchronization tool was ported to Java, I also developed a web application
+                built on top of the synchronization tool to show statistics related to the
+                agile development process, such as the number of issues reopened during
+                each sprint. This web application has been directly embedded into the Java application using
+                <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend was developed using
+                <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
+            </p>
+        </article>
         <article>
             <h3>Performance testing of a REST web service with Gatling (2014)</h3>
             <p>
@@ -153,6 +168,8 @@
                 I worked in an agile team of 8 developers and also closely with the system admin team in order
                 to execute the performance tests on a pre-production environment.
             </p>
+        </article>
+        <article>
             <h3>
                 <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
                 [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
@@ -196,6 +213,8 @@
                 from our product owner. It was also very interesting and rewarding to get
                 suggestions and positive feedback from the end users throughout the project.
             </p>
+        </article>
+        <article>
             <h3>
                 <a href="https://github.com/sniksnp/PANDATIME">sniksnp/PANDATIME</a> (2013)
                 [<a href="http://sniksnp.github.io/PANDATIME">link to soundboard</a>]
@@ -208,6 +227,8 @@
                 I had a lot of fun developing it and seeing it being used on stream!
             </p>
             <p class="center"><img src="im/pandatime.jpg" alt="" /></p>
+        </article>
+        <article>
             <h3>Porting of an embedded system application to PC (2012)</h3>
             <p>
                 My end-of-bachelor's degree internship consisted in porting a software installed
@@ -231,6 +252,8 @@
                 unique to it, such as being limited to only 128k of disk space. That was also the first
                 time I worked with an agile team (8 members, mainly XP).
             </p>
+        </article>
+        <article>
             <h3><a href="https://github.com/sniksnp/hadouken_jump">sniksnp/hadouken_jump</a> (2012)</h3>
             <p>
                 Hadouken Jump is a simple game I made in one day after playing SSF4 with a friend
@@ -242,6 +265,8 @@
                 <img src="https://raw.githubusercontent.com/sniksnp/hadouken_jump/master/im/Screenshot_1.jpg"
                      alt="" />
             </p>
+        </article>
+        <article>
             <h3><a href="https://github.com/sniksnp/typing_game">sniksnp/typing_game</a> (2011)</h3>
             <p>
                 This is a typing game I wrote while learning Qt and Python. It was
@@ -260,6 +285,8 @@
                 <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
                 Windows installer</a>.
             </p>
+        </article>
+        <article>
             <h3>iPhone and iPad applications development (2011)</h3>
             <p>
                 My first internship as a developer consisted in developing an iPhone application for
