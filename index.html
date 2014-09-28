@@ -1,490 +1,489 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="sniksnp" />
-    <meta name="author" content="sniksnp" />
-    <title>sniksnp</title>
-    <link rel="icon" href="im/favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sniksnp" />
+  <meta name="author" content="sniksnp" />
+  <title>sniksnp</title>
+  <link rel="icon" href="im/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <header>
-        <div><img src="im/face.png" alt="" /></div>
-        <div>
-            <h1>
-                sniksnp
-                <a href="mailto:sniksnp@gmail.com"><img src="im/gmail.jpg" alt="" /></a>
-                <a href="https://github.com/sniksnp"><img src="im/github.png" alt="" /></a>
-                <a href="https://twitter.com/sniksnp"><img src="im/twitter.png" alt="" /></a>
-                <a href="http://www.reddit.com/user/sniksnp"><img src="im/rddt.png" alt="" /></a>
-                <a href="http://grooveshark.com/#!/profile/Sniksnp/27147827"><img src="im/grvshrk.png" alt="" /></a>
-            </h1>
-            <p>
-                Hi! I'm a junior software engineer living in France, currently working as a Devops in a french software
-                company. I'm interested in learning Scala and improving my skills in Java. I also enjoy web
-                development and programming in Python.
-            </p>
-        </div>
-    </header>
-    <section>
-        <h1>Projects I'm currently working on</h1>
-        <article>
-            <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
-            <p>
-                This is the code I write while reading JUnit Recipes, which consists in unit tests
-                from the book and some ideas I have along the way. This project is built using Maven on
-                <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
-                are generated using Cobertura, and are automatically pushed to
-                <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
-            </p>
-        </article>
-    </section>
-    <section>
-        <h1>Previous projects</h1>
-        <article>
-            <h3><a href="https://github.com/sniksnp/lescastcodeurs.com">sniksnp/lescastcodeurs.com</a> (2014)</h3>
-            <p>
-                "Les Cast Codeurs" is a french Java podcast hosted by Emmanuel Bernard, Arnaud Héritier, Guillaume
-                Laforge, Antonio Goncalves and Vincent Massol. It is primarly focused on the Java ecosystem but
-                also deals with various other topics. It is my favourite podcast and I heavily recommend it
-                to anyone interested in Java.
-            </p>
-            <p class="center">
-                <img src="http://lescastcodeurs.com/images/logo_carre_transparent_150height.png" alt="" />
-            </p>
-            <p>
-                As a way to thank them for doing this podcast, I suggested to improve their website
-                (<a href="http://lescastcodeurs.com">lescastcodeurs.com</a>). Its source code is
-                <a href="https://github.com/lescastcodeurs/lescastcodeurs.com">hosted on Github</a>.
-                This website is generated using <a href="http://awestruct.org/">Awestruct</a>, and consists in
-                blog posts (one for each podcast) and additional information about the podcast.
-            </p>
-            <p>
-                At first, I converted all the old blog posts written in Erb to Markdown in order to have
-                a consistent content across the site, since the new blog posts are written in Markdown. I
-                used different regular expressions to achieve this, for example:
-            </p>
-            <pre>sed -r 's!&lt;a href="(.*)"&gt;(.*)&lt;/a&gt;![\2](\1)!g' blog-post.erb</pre>
-            <p>
-                to convert the HTML &lt;a&gt; tags to Markdown links. I also fixed typos and formatting
-                errors along the way.
-            </p>
-            <p>
-                Then, I re-designed the look-and-feel of the website, the goal being to make it look more "modern".
-                I updated the version of Bootstrap from 2 to 3.1,
-                improved the layout and colors a bit, and made the site responsive (which was quite easy
-                with Bootstrap). The following images are screenshots of the home page before
-                and after the redesign:
-            </p>
-            <p class="center">
-                <img src="im/lcc-old.jpg" alt="" />
-                <img src="im/lcc-new.jpg" alt="" />
-            </p>
-        </article>
-        <article>
-            <h3>Application Lifecycle Management Integration Tool development (2014)</h3>
-            <p>
-                I developed a Java application to synchronize the different
-                application lifecycle management (ALM) tools used by
-                the agile team I worked with during the last 3 months of my end-of-degree internship.
-                These tools were
-                <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
-                <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
-                <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
-                <a href="https://subversion.apache.org">Subversion</a> (version control system).
-            </p>
-            <p class="center">
-                <img src="im/youtrack.png" alt="" />
-                <img src="im/pivotal.png" alt="" />
-                <img src="im/jenkins.png" alt="" />
-                <img src="im/svn.png" alt="" />
-            </p>
-            <p>
-                A PHP application developed by a previous intern already existed to synchronize these tools.
-                Unfortunately, it wasn't working with the most recent APIs of YouTrack and Pivotal Tracker
-                and was rather hard to maintain.
-                Rewriting this PHP application in Java had multiple advantages: first,
-                it would be easier to maintain since the agile team members are more familiar with
-                Java, and secondly, it would be designed to easily adapt to the most recent YouTrack and Pivotal
-                Tracker APIs.
-            </p>
-            <p>
-                While the synchronization tool was ported to Java, I also developed a web application
-                built on top of the synchronization tool to show statistics related to the
-                agile development process, such as the number of issues reopened during
-                each sprint. This web application has been directly embedded into the Java application using
-                <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend was developed using
-                <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
-            </p>
-        </article>
-        <article>
-            <h3>Performance testing of a REST web service with Gatling (2014)</h3>
-            <p>
-                This was the first part of my end-of-degree internship (3 first months out of 6).
-                I developed a Java/Scala hybrid application
-                to automate performance testing of the REST web service of an integrated library system (ILS)
-                marketed as a SaaS. The goal was to find how many simultaneous users
-                the integrated library system could sustain, in order to adapt the production
-                infrastructure as the number of customers grow.
-            </p>
-            <p class="center"><img src="im/gatling.png" alt="" /></p>
-            <p>
-                I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
-                tool written in Scala, since it is well suited to test a web service and it makes tests easy to
-                maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
-                easy to interact with a Java application. The project consists in 3 Java CLI applications
-                organized in Maven modules, used to either restore a test environment
-                from multiple MySQL and Solr dumps, generate random test data from a database,
-                and run the performance tests and generate test results.
-                I also wrote a monitoring script which is executed
-                while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
-                of the different VMs of the test environment into the results from Gatling. The monitoring of
-                the ILS backend, provided by <a href="https://code.google.com/p/javamelody">JavaMelody</a>,
-                is also integrated into these results.
-            </p>
-            <p>
-                The main challenges of this project were to produce meaningful test data, and to
-                simulate real users behaviors by only sending and receiving web service requests.
-                I worked in an agile team of 8 developers and also closely with the system admin team in order
-                to execute the performance tests on a pre-production environment.
-            </p>
-        </article>
-        <article>
-            <h3>
-                <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
-                [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
-            </h3>
-            <p>
-                This is a sliding puzzle web application written in vanilla JS and HTML5. I started this
-                project for fun and also to familiarize myself with web applications performance
-                problems, testing in Javascript, and various web technologies.
-                The main goal was to develop a functionality allowing the user to play on any image of her
-                choice, with the web application completely running on the client side. The source code is
-                automatically minified on push using Grunt and a custom Python script, and then deployed by
-                <a href="https://travis-ci.org/sniksnp/image-slider-game">Travis CI</a> to
-                <a href="http://sniksnp.github.io/image-slider-game">sniksnp.github.io/image-slider-game</a>.
-            </p>
-            <p class="center"><img src="im/image-slider-game.jpg" alt="" /></p>
-            <p>
-                I also added the possibility to take a picture (from a webcam or a phone camera) and play on
-                it. Last but not least, you can let the application solve the puzzle for you by clicking on
-                the robot icon.
-            </p>
-            <h3>Web interface to a command line tool with Node.js and Bootstrap (2013)</h3>
-            <p>
-                This is by far the most interesting project I worked on at university. We had to work in
-                a team of 2, and the goal was to develop a web interface to a command line tool,
-                created by computer scientists of our university, in order to simplify its use
-                (SaaS instead of a complicated command line interface).
-            </p>
-            <p class="center"><img src="im/web_interface.jpg" alt="" /></p>
-            <p>
-                We chose to use Node.js since it was well suited to develop an asynchronous
-                application such as this one, and Bootstrap/jQuery for the front end. These technologies
-                enabled a really fast development pace: we were able to ship a prototype in
-                only one week. We then added new functionalities on top of it, such as sending emails,
-                input/output processing, and a <a href="http://rise4fun.com">rise4fun</a> web service.
-                We also automated non-regression testing of the tool and wrote an extensive documentation
-                of the web interface and the tool itself.
-            </p>
-            <p>
-                We tried to apply agile methodologies as much as we could, which helped
-                us a lot to adapt the web application to the constant requirement changes
-                from our product owner. It was also very interesting and rewarding to get
-                suggestions and positive feedback from the end users throughout the project.
-            </p>
-        </article>
-        <article>
-            <h3>
-                <a href="https://github.com/sniksnp/PANDATIME">sniksnp/PANDATIME</a> (2013)
-                [<a href="http://sniksnp.github.io/PANDATIME">link to soundboard</a>]
-            </h3>
-            <p>
-                This web application is a soundboard I made for Teldo, one of my favourite streamers on
-                Twitch.tv. Originally, I wanted to make a web app using sound that could work on desktop
-                as well as on mobile web browsers, therefore I chose to use the WebAudio API instead of Flash.
-                As a consequence, it won't work on older browsers. Even though this soundboard is very silly,
-                I had a lot of fun developing it and seeing it being used on stream!
-            </p>
-            <p class="center"><img src="im/pandatime.jpg" alt="" /></p>
-        </article>
-        <article>
-            <h3>Porting of an embedded system application to PC (2012)</h3>
-            <p>
-                My end-of-bachelor's degree internship consisted in porting a software installed
-                on parking pay-and-display machines to PC. This software, written in C,
-                was designed to work on ARM7 processors. My role was to modify it so that
-                it could be run on x86 processors. This internship lasted 6 months.
-            </p>
-            <p>
-                The aim of porting the application to PC was to facilitate the
-                development of functional tests, therefore it was not judged useful to completely
-                rewrite all the low-level components of the embedded
-                system (based on OpenBSD 3.8). Instead, I mocked the interfaces of the pay-and-display
-                machine peripherals and modified the code of the application in order to use
-                PC-compatible libraries, such as pthread instead of a proprietary multithreading library.
-            </p>
-            <p>
-                Although this project was rather tedious, I managed to achieve most of its objectives.
-                Unfortunately, I couldn't mock all of the peripherals since some of them were
-                really complex and sometimes proprietary (the card reader for example). All in all, it was
-                a great way to discover the world of embedded software and to face interesting challenges
-                unique to it, such as being limited to only 128k of disk space. That was also the first
-                time I worked with an agile team (8 members, mainly XP).
-            </p>
-        </article>
-        <article>
-            <h3><a href="https://github.com/sniksnp/hadouken_jump">sniksnp/hadouken_jump</a> (2012)</h3>
-            <p>
-                Hadouken Jump is a simple game I made in one day after playing SSF4 with a friend
-                whose playstyle could be summed up as "spam-hadoukens-as-fast-as-you-can".
-                The only aim of the game is therefore to jump over hadoukens. It was coded in Python
-                with Panda 3D (a game engine I was experimenting with at that time).
-            </p>
-            <p class="center">
-                <img src="https://raw.githubusercontent.com/sniksnp/hadouken_jump/master/im/Screenshot_1.jpg"
-                     alt="" />
-            </p>
-        </article>
-        <article>
-            <h3><a href="https://github.com/sniksnp/typing_game">sniksnp/typing_game</a> (2011)</h3>
-            <p>
-                This is a typing game I wrote while learning Qt and Python. It was
-                originally written in Python 2.7 with PyQt4, and I recently ported it to Python 3.3/PyQt5.
-            </p>
-            <p class="center">
-                <img src="https://raw.githubusercontent.com/sniksnp/typing_game/master/im/screenshot.jpg"
-                     alt="" />
-            </p>
-            <p>
-                I had used py2exe to create a standalone Windows executable of the application,
-                but unfortunately, py2exe doesn't support Python 3+. PyInstaller seems to be
-                a good alternative to py2exe, but it <a href="http://www.pyinstaller.org/roadmap"> doesn't
-                support Python 3 either</a> (yet). Therefore I chose to use cx_Freeze and
-                Inno Setup to distribute the application as a
-                <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
-                Windows installer</a>.
-            </p>
-        </article>
-        <article>
-            <h3>iPhone and iPad applications development (2011)</h3>
-            <p>
-                My first internship as a developer consisted in developing an iPhone application for
-                a bus company and making it available on the App Store. The application can be used
-                to calculate a route between 2 bus stops, find the
-                nearest bus stops from the current location, display bus lines on a map
-                and buy a ticket by SMS.
-            </p>
-            <p class="center">
-                <img src="im/iphone1.jpg" alt="" />
-                <img src="im/iphone2.jpg" alt="" />
-            </p>
-            <p>
-                Informations about the bus network are provided by a real-time passenger information system
-                (PIS). For instance, the users can search a bus stop by name and instantly know
-                when the next buses will pass. I had the responsability to publish this application on the
-                App Store, which took quite some time but was successful. Unfortunately, this iPhone
-                application is not maintained anymore and since it was developed for iOS 4, it probably
-                won't work on current iPhone devices (iOS 7).
-            </p>
-            <p>
-                I've been hired by the bus company at the end of my internship for 1 month in order
-                to develop a completely different application, for iPad, used by some of the bus
-                company employees. Basically, its
-                goal was to track a user's position and to send these positions to a FTP server
-                in KMZ format.
-            </p>
-        </article>
-    </section>
-    <section>
-        <h1>Books I'm currently reading</h1>
-        <article>
-            <ul>
-                <li>
-                    <a href="http://www.manning.com/rainsberger">
-                        JUnit Recipes: Practical Methods for Programmer Testing
-                    </a>
-                </li>
-                <li>
-                    <a href="http://shop.oreilly.com/product/9780596007126.do">Head First Design Patterns</a>
-                </li>
-                <li>
-                    <a href="http://www.amazon.com/Scala-Impatient-Cay-S-Horstmann/dp/0321774094">
-                        Scala for the impatient
-                    </a>
-                </li>
-            </ul>
-        </article>
-    </section>
-    <section>
-        <h1>
-            Music I listen to
-            [<a href="http://grooveshark.com/#!/playlist/Sniksnp+github+io/97566840">playlist</a>]
-        </h1>
-        <article>
-            <ul id="musiclist">
-                <li><a href="http://grooveshark.com/#!/s/Demon+Days/3NdLXM?src=5">Gorillaz</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Voyager/4EeQRY?src=5">Daft Punk</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Illumination/4CtE3b?src=5">Miami Horror</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Runaway+Remastered+For+2006/4bT4a0?src=5">Jamiroquai</a></li>
-                <li><a href="http://grooveshark.com/#!/s/E+Talking/4M5kRE?src=5">Soulwax</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Hard+Lovin+Woman/3BauoQ?src=5">Deep Purple</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Talisman/4z4Yzh?src=5">Air</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Night+By+Night/2QrLPD?src=5">Chromeo</a></li>
-                <li><a href="http://grooveshark.com/#!/s/This+Is+The+Remix/3Bwt4g?src=5">Girl Talk</a></li>
-                <li>
-                    <a href="http://grooveshark.com/#!/s/Dead+Leaves+And+The+Dirty+Ground/IlEmD?src=5">The White Stripes</a>
-                </li>
-                <li><a href="http://grooveshark.com/#!/s/First+It+Giveth/2CZRl2?src=5">Queens of the Stone Age</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Falcon+Jab/3GLh5z?src=5">Ratatat</a></li>
-                <li><a href="http://grooveshark.com/#!/s/IOU/2v3isD?src=5">Metric</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Blue+Blood+Blues/2QiSUd?src=5">The Dead Weather</a></li>
-                <li><a href="http://grooveshark.com/#!/s/01+La+Rage/3RdLW5?src=5">Noir Désir</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Penelope+Pitstop/2Jka2N?src=5">Breakbot</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Siberian+Breaks/4DPnxM?src=5">MGMT</a></li>
-                <li><a href="http://grooveshark.com/#!/s/Rainbow+Man/3xV42k?src=5">Busy P</a></li>
-                <li><a href="http://grooveshark.com/#!/s/June+Bug/1o3BP4?src=5">The Melvins</a></li>
-            </ul>
-        </article>
-    </section>
-    <section>
-        <h1>Favorite tools, frameworks, etc.</h1>
-        <article id="tools">
-            <div>
-                <h3>OS</h3>
-                <ul>
-                    <li>Debian</li>
-                    <li>Windows 7</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Web</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>XAMPP</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Java</h3>
-                <ul>
-                    <li>jOOQ</li>
-                    <li>Android</li>
-                    <li>Spring</li>
-                    <li>Spark</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Testing</h3>
-                <ul>
-                    <li>JUnit</li>
-                    <li>Gatling</li>
-                    <li>Cobertura</li>
-                    <li>Mockito</li>
-                    <li>Selenium</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Languages</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Scala</li>
-                    <li>Python</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Build</h3>
-                <ul>
-                    <li>Maven</li>
-                    <li>Gradle</li>
-                </ul>
-            </div>
-            <div>
-                <h3>3D</h3>
-                <ul>
-                    <li>Blender</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Office</h3>
-                <ul>
-                    <li>LaTeX</li>
-                    <li>LibreOffice</li>
-                </ul>
-            </div>
-            <div>
-                <h3>IDE / Text editors</h3>
-                <ul>
-                    <li>IntelliJ IDEA</li>
-                    <li>Emacs</li>
-                    <li>Sublime Text 3</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Javascript</h3>
-                <ul>
-                    <li>jQuery</li>
-                    <li>Node.js</li>
-                    <li>Grunt</li>
-                </ul>
-            </div>
-            <div>
-                <h3>CI</h3>
-                <ul>
-                    <li>Travis CI</li>
-                    <li>Jenkins</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Graphic design</h3>
-                <ul>
-                    <li>Gimp</li>
-                    <li>Inkscape</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Virtualization</h3>
-                <ul>
-                    <li>VirtualBox</li>
-                    <li>Vagrant</li>
-                </ul>
-            </div>
-            <div>
-                <h3>VCS</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>SVN</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Audio</h3>
-                <ul>
-                    <li>Ableton Live</li>
-                    <li>Audacity</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Python</h3>
-                <ul>
-                    <li>PyQt</li>
-                    <li>Panda3D</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Video</h3>
-                <ul>
-                    <li>Sony Vegas Pro</li>
-                </ul>
-            </div>
-        </article>
-    </section>
+  <header>
+    <div><img src="im/face.png" alt="" /></div>
+    <div>
+      <h1>
+        sniksnp
+        <a href="mailto:sniksnp@gmail.com"><img src="im/gmail.jpg" alt="" /></a>
+        <a href="https://github.com/sniksnp"><img src="im/github.png" alt="" /></a>
+        <a href="https://twitter.com/sniksnp"><img src="im/twitter.png" alt="" /></a>
+        <a href="http://www.reddit.com/user/sniksnp"><img src="im/rddt.png" alt="" /></a>
+        <a href="http://grooveshark.com/#!/profile/Sniksnp/27147827"><img src="im/grvshrk.png" alt="" /></a>
+      </h1>
+      <p>
+        Hi! I'm a junior software engineer living in France, currently working as a Devops in a software
+        company. I'm interested in learning Scala and improving my skills in Java. I also enjoy web
+        development, programming in Python, and using Puppet.
+      </p>
+    </div>
+  </header>
+  <section>
+    <h1>Projects I'm currently working on</h1>
+    <article>
+      <h3><a href="https://github.com/sniksnp/junit_recipes">sniksnp/junit_recipes</a></h3>
+      <p>
+        This is the code I write while reading JUnit Recipes, which consists in unit tests
+        from the book and some ideas I have along the way. This project is built using Maven on
+        <a href="https://travis-ci.org/sniksnp/junit_recipes">Travis CI</a>. Code coverage reports
+        are generated using Cobertura, and are automatically pushed to
+        <a href="https://coveralls.io/r/sniksnp/junit_recipes">Coveralls.io</a>.
+      </p>
+    </article>
+  </section>
+  <section>
+    <h1>Previous projects</h1>
+    <article>
+      <h3><a href="https://github.com/sniksnp/lescastcodeurs.com">sniksnp/lescastcodeurs.com</a> (2014)</h3>
+      <p>
+        "Les Cast Codeurs" is a french Java podcast hosted by Emmanuel Bernard, Arnaud Héritier, Guillaume
+        Laforge, Antonio Goncalves and Vincent Massol. It is primarly focused on the Java ecosystem but
+        also deals with various other topics. It is my favourite podcast and I heavily recommend it
+        to anyone interested in Java.
+      </p>
+      <p class="center">
+        <img src="http://lescastcodeurs.com/images/logo_carre_transparent_150height.png" alt="" />
+      </p>
+      <p>
+        As a way to thank them for doing this podcast, I suggested to improve their website
+        (<a href="http://lescastcodeurs.com">lescastcodeurs.com</a>). Its source code is
+        <a href="https://github.com/lescastcodeurs/lescastcodeurs.com">hosted on Github</a>.
+        This website is generated using <a href="http://awestruct.org/">Awestruct</a>, and consists in
+        blog posts (one for each podcast) and additional information about the podcast.
+      </p>
+      <p>
+        At first, I converted all the old blog posts written in Erb to Markdown in order to have
+        a consistent content across the site, since the new blog posts are written in Markdown. I
+        used different regular expressions to achieve this, for example:
+      </p>
+      <pre>sed -r 's!&lt;a href="(.*)"&gt;(.*)&lt;/a&gt;![\2](\1)!g' blog-post.erb</pre>
+      <p>
+        to convert the HTML &lt;a&gt; tags to Markdown links. I also fixed typos and formatting
+        errors along the way.
+      </p>
+      <p>
+        Then, I re-designed the look-and-feel of the website, the goal being to make it look more "modern".
+        I updated the version of Bootstrap from 2 to 3.1,
+        improved the layout and colors a bit, and made the site responsive (which was quite easy
+        with Bootstrap). The following images are screenshots of the home page before
+        and after the redesign:
+      </p>
+      <p class="center">
+        <img src="im/lcc-old.jpg" alt="" />
+        <img src="im/lcc-new.jpg" alt="" />
+      </p>
+    </article>
+    <article>
+      <h3>Application Lifecycle Management Integration Tool development (2014)</h3>
+      <p>
+        I developed a Java application to synchronize the different
+        application lifecycle management (ALM) tools used by
+        the agile team I worked with during the last 3 months of my end-of-degree internship.
+        These tools were
+        <a href="http://www.jetbrains.com/youtrack">YouTrack</a> (issue tracking tool),
+        <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> (agile project management tool),
+        <a href="http://jenkins-ci.org">Jenkins</a> (continuous integration server) and
+        <a href="https://subversion.apache.org">Subversion</a> (version control system).
+      </p>
+      <p class="center">
+        <img src="im/youtrack.png" alt="" />
+        <img src="im/pivotal.png" alt="" />
+        <img src="im/jenkins.png" alt="" />
+        <img src="im/svn.png" alt="" />
+      </p>
+      <p>
+        A PHP application developed by a previous intern already existed to synchronize these tools.
+        Unfortunately, it wasn't working with the most recent APIs of YouTrack and Pivotal Tracker
+        and was rather hard to maintain.
+        Rewriting this PHP application in Java had multiple advantages: first,
+        it would be easier to maintain since the agile team members are more familiar with
+        Java, and secondly, it would be designed to easily adapt to the most recent YouTrack and Pivotal
+        Tracker APIs.
+      </p>
+      <p>
+        While the synchronization tool was ported to Java, I also developed a web application
+        built on top of the synchronization tool to show statistics related to the
+        agile development process, such as the number of issues reopened during
+        each sprint. This web application has been directly embedded into the Java application using
+        <a href="http://www.sparkjava.com/index.html">Spark</a> and the frontend was developed using
+        <a href="http://dev.sencha.com/ext/5.0.0">ExtJS 5</a>.
+      </p>
+    </article>
+    <article>
+      <h3>Performance testing of a REST web service with Gatling (2014)</h3>
+      <p>
+        This was the first part of my end-of-degree internship (3 first months out of 6).
+        I developed a Java/Scala hybrid application
+        to automate performance testing of the REST web service of an integrated library system (ILS)
+        marketed as a SaaS. The goal was to find how many simultaneous users
+        the integrated library system could sustain, in order to adapt the production
+        infrastructure as the number of customers grow.
+      </p>
+      <p class="center"><img src="im/gatling.png" alt="" /></p>
+      <p>
+        I chose to use <a href="https://github.com/excilys/gatling">Gatling</a>, an open source stress
+        tool written in Scala, since it is well suited to test a web service and it makes tests easy to
+        maintain (contrary to JMeter). Furthermore, the fact that it is written in Scala makes it
+        easy to interact with a Java application. The project consists in 3 Java CLI applications
+        organized in Maven modules, used to either restore a test environment
+        from multiple MySQL and Solr dumps, generate random test data from a database,
+        and run the performance tests and generate test results.
+        I also wrote a monitoring script which is executed
+        while running the tests, in order to integrate the monitoring measures (CPU, RAM and I/O usage)
+        of the different VMs of the test environment into the results from Gatling. The monitoring of
+        the ILS backend, provided by <a href="https://code.google.com/p/javamelody">JavaMelody</a>,
+        is also integrated into these results.
+      </p>
+      <p>
+        The main challenges of this project were to produce meaningful test data, and to
+        simulate real users behaviors by only sending and receiving web service requests.
+        I worked in an agile team of 8 developers and also closely with the system admin team in order
+        to execute the performance tests on a pre-production environment.
+      </p>
+    </article>
+    <article>
+      <h3>
+        <a href="https://github.com/sniksnp/image-slider-game">sniksnp/image-slider-game</a> (2014)
+        [<a href="http://sniksnp.github.io/image-slider-game">link to game</a>]
+      </h3>
+      <p>
+        This is a sliding puzzle web application written in vanilla JS and HTML5. I started this
+        project for fun and also to familiarize myself with web applications performance
+        problems, testing in Javascript, and various web technologies.
+        The main goal was to develop a functionality allowing the user to play on any image of her
+        choice, with the web application completely running on the client side. The source code is
+        automatically minified on push using Grunt and a custom Python script, and then deployed by
+        <a href="https://travis-ci.org/sniksnp/image-slider-game">Travis CI</a> to
+        <a href="http://sniksnp.github.io/image-slider-game">sniksnp.github.io/image-slider-game</a>.
+      </p>
+      <p class="center"><img src="im/image-slider-game.jpg" alt="" /></p>
+      <p>
+        I also added the possibility to take a picture (from a webcam or a phone camera) and play on
+        it. Last but not least, you can let the application solve the puzzle for you by clicking on
+        the robot icon.
+      </p>
+      <h3>Web interface to a command line tool with Node.js and Bootstrap (2013)</h3>
+      <p>
+        This is by far the most interesting project I worked on at university. We had to work in
+        a team of 2, and the goal was to develop a web interface to a command line tool,
+        created by computer scientists of our university, in order to simplify its use
+        (SaaS instead of a complicated command line interface).
+      </p>
+      <p class="center"><img src="im/web_interface.jpg" alt="" /></p>
+      <p>
+        We chose to use Node.js since it was well suited to develop an asynchronous
+        application such as this one, and Bootstrap/jQuery for the front end. These technologies
+        enabled a really fast development pace: we were able to ship a prototype in
+        only one week. We then added new functionalities on top of it, such as sending emails,
+        input/output processing, and a <a href="http://rise4fun.com">rise4fun</a> web service.
+        We also automated non-regression testing of the tool and wrote an extensive documentation
+        of the web interface and the tool itself.
+      </p>
+      <p>
+        We tried to apply agile methodologies as much as we could, which helped
+        us a lot to adapt the web application to the constant requirement changes
+        from our product owner. It was also very interesting and rewarding to get
+        suggestions and positive feedback from the end users throughout the project.
+      </p>
+    </article>
+    <article>
+      <h3>
+        <a href="https://github.com/sniksnp/PANDATIME">sniksnp/PANDATIME</a> (2013)
+        [<a href="http://sniksnp.github.io/PANDATIME">link to soundboard</a>]
+      </h3>
+      <p>
+        This web application is a soundboard I made for Teldo, one of my favourite streamers on
+        Twitch.tv. Originally, I wanted to make a web app using sound that could work on desktop
+        as well as on mobile web browsers, therefore I chose to use the WebAudio API instead of Flash.
+        As a consequence, it won't work on older browsers. Even though this soundboard is very silly,
+        I had a lot of fun developing it and seeing it being used on stream!
+      </p>
+      <p class="center"><img src="im/pandatime.jpg" alt="" /></p>
+    </article>
+    <article>
+      <h3>Porting of an embedded system application to PC (2012)</h3>
+      <p>
+        My end-of-bachelor's degree internship consisted in porting a software installed
+        on parking pay-and-display machines to PC. This software, written in C,
+        was designed to work on ARM7 processors. My role was to modify it so that
+        it could be run on x86 processors. This internship lasted 6 months.
+      </p>
+      <p>
+        The aim of porting the application to PC was to facilitate the
+        development of functional tests, therefore it was not judged useful to completely
+        rewrite all the low-level components of the embedded
+        system (based on OpenBSD 3.8). Instead, I mocked the interfaces of the pay-and-display
+        machine peripherals and modified the code of the application in order to use
+        PC-compatible libraries, such as pthread instead of a proprietary multithreading library.
+      </p>
+      <p>
+        Although this project was rather tedious, I managed to achieve most of its objectives.
+        Unfortunately, I couldn't mock all of the peripherals since some of them were
+        really complex and sometimes proprietary (the card reader for example). All in all, it was
+        a great way to discover the world of embedded software and to face interesting challenges
+        unique to it, such as being limited to only 128k of disk space. That was also the first
+        time I worked with an agile team (8 members, mainly XP).
+      </p>
+    </article>
+    <article>
+      <h3><a href="https://github.com/sniksnp/hadouken_jump">sniksnp/hadouken_jump</a> (2012)</h3>
+      <p>
+        Hadouken Jump is a simple game I made in one day after playing SSF4 with a friend
+        whose playstyle could be summed up as "spam-hadoukens-as-fast-as-you-can".
+        The only aim of the game is therefore to jump over hadoukens. It was coded in Python
+        with Panda 3D (a game engine I was experimenting with at that time).
+      </p>
+      <p class="center">
+        <img src="https://raw.githubusercontent.com/sniksnp/hadouken_jump/master/im/Screenshot_1.jpg"
+           alt="" />
+      </p>
+    </article>
+    <article>
+      <h3><a href="https://github.com/sniksnp/typing_game">sniksnp/typing_game</a> (2011)</h3>
+      <p>
+        This is a typing game I wrote while learning Qt and Python. It was
+        originally written in Python 2.7 with PyQt4, and I recently ported it to Python 3.3/PyQt5.
+      </p>
+      <p class="center">
+        <img src="https://raw.githubusercontent.com/sniksnp/typing_game/master/im/screenshot.jpg"
+           alt="" />
+      </p>
+      <p>
+        I had used py2exe to create a standalone Windows executable of the application,
+        but unfortunately, py2exe doesn't support Python 3+. PyInstaller seems to be
+        a good alternative to py2exe, but it <a href="http://www.pyinstaller.org/roadmap"> doesn't
+        support Python 3 either</a> (yet). Therefore I chose to use cx_Freeze and
+        Inno Setup to distribute the application as a
+        <a href="https://github.com/sniksnp/typing_game/raw/master/dist/typing_game-setup.exe">
+        Windows installer</a>.
+      </p>
+    </article>
+    <article>
+      <h3>iPhone and iPad applications development (2011)</h3>
+      <p>
+        My first internship as a developer consisted in developing an iPhone application for
+        a bus company and making it available on the App Store. The application can be used
+        to calculate a route between 2 bus stops, find the
+        nearest bus stops from the current location, display bus lines on a map
+        and buy a ticket by SMS.
+      </p>
+      <p class="center">
+        <img src="im/iphone1.jpg" alt="" />
+        <img src="im/iphone2.jpg" alt="" />
+      </p>
+      <p>
+        Informations about the bus network are provided by a real-time passenger information system
+        (PIS). For instance, the users can search a bus stop by name and instantly know
+        when the next buses will pass. I had the responsability to publish this application on the
+        App Store, which took quite some time but was successful. Unfortunately, this iPhone
+        application is not maintained anymore and since it was developed for iOS 4, it probably
+        won't work on current iPhone devices (iOS 7).
+      </p>
+      <p>
+        I've been hired by the bus company at the end of my internship for 1 month in order
+        to develop a completely different application, for iPad, used by some of the bus
+        company employees. Basically, its
+        goal was to track a user's position and to send these positions to a FTP server
+        in KMZ format.
+      </p>
+    </article>
+  </section>
+  <section>
+    <h1>Books I'm currently reading</h1>
+    <article>
+      <ul>
+        <li>
+          <a href="http://www.manning.com/rainsberger">
+            JUnit Recipes: Practical Methods for Programmer Testing
+          </a>
+        </li>
+        <li>
+          <a href="http://shop.oreilly.com/product/9780596007126.do">Head First Design Patterns</a>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/Scala-Impatient-Cay-S-Horstmann/dp/0321774094">
+            Scala for the impatient
+          </a>
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h1>
+      Music I listen to
+      [<a href="http://grooveshark.com/#!/playlist/Sniksnp+github+io/97566840">playlist</a>]
+    </h1>
+    <article>
+      <ul id="musiclist">
+        <li><a href="http://grooveshark.com/#!/s/Demon+Days/3NdLXM?src=5">Gorillaz</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Voyager/4EeQRY?src=5">Daft Punk</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Illumination/4CtE3b?src=5">Miami Horror</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Runaway+Remastered+For+2006/4bT4a0?src=5">Jamiroquai</a></li>
+        <li><a href="http://grooveshark.com/#!/s/E+Talking/4M5kRE?src=5">Soulwax</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Hard+Lovin+Woman/3BauoQ?src=5">Deep Purple</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Talisman/4z4Yzh?src=5">Air</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Night+By+Night/2QrLPD?src=5">Chromeo</a></li>
+        <li><a href="http://grooveshark.com/#!/s/This+Is+The+Remix/3Bwt4g?src=5">Girl Talk</a></li>
+        <li>
+          <a href="http://grooveshark.com/#!/s/Dead+Leaves+And+The+Dirty+Ground/IlEmD?src=5">The White Stripes</a>
+        </li>
+        <li><a href="http://grooveshark.com/#!/s/First+It+Giveth/2CZRl2?src=5">Queens of the Stone Age</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Falcon+Jab/3GLh5z?src=5">Ratatat</a></li>
+        <li><a href="http://grooveshark.com/#!/s/IOU/2v3isD?src=5">Metric</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Blue+Blood+Blues/2QiSUd?src=5">The Dead Weather</a></li>
+        <li><a href="http://grooveshark.com/#!/s/01+La+Rage/3RdLW5?src=5">Noir Désir</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Penelope+Pitstop/2Jka2N?src=5">Breakbot</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Siberian+Breaks/4DPnxM?src=5">MGMT</a></li>
+        <li><a href="http://grooveshark.com/#!/s/Rainbow+Man/3xV42k?src=5">Busy P</a></li>
+        <li><a href="http://grooveshark.com/#!/s/June+Bug/1o3BP4?src=5">The Melvins</a></li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <h1>Favorite tools, frameworks, etc.</h1>
+    <article id="tools">
+      <div>
+        <h3>OS</h3>
+        <ul>
+          <li>Debian</li>
+          <li>Windows 7</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Web</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Java</h3>
+        <ul>
+          <li>jOOQ</li>
+          <li>Android</li>
+          <li>Spring</li>
+          <li>Spark</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Testing</h3>
+        <ul>
+          <li>JUnit</li>
+          <li>Gatling</li>
+          <li>Cobertura</li>
+          <li>Mockito</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>Scala</li>
+          <li>Python</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Build</h3>
+        <ul>
+          <li>Maven</li>
+          <li>Gradle</li>
+        </ul>
+      </div>
+      <div>
+        <h3>3D</h3>
+        <ul>
+          <li>Blender</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Office</h3>
+        <ul>
+          <li>LaTeX</li>
+          <li>LibreOffice</li>
+        </ul>
+      </div>
+      <div>
+        <h3>IDE / Text editors</h3>
+        <ul>
+          <li>IntelliJ IDEA</li>
+          <li>Emacs</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Javascript</h3>
+        <ul>
+          <li>jQuery</li>
+          <li>Node.js</li>
+          <li>Grunt</li>
+        </ul>
+      </div>
+      <div>
+        <h3>CI</h3>
+        <ul>
+          <li>Travis CI</li>
+          <li>Jenkins</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Graphic design</h3>
+        <ul>
+          <li>Gimp</li>
+          <li>Inkscape</li>
+        </ul>
+      </div>
+      <div>
+        <h3>VM / sys</h3>
+        <ul>
+          <li>VirtualBox</li>
+          <li>Vagrant</li>
+          <li>Puppet</li>
+        </ul>
+      </div>
+      <div>
+        <h3>VCS</h3>
+        <ul>
+          <li>Git</li>
+          <li>SVN</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Audio</h3>
+        <ul>
+          <li>Ableton Live</li>
+          <li>Audacity</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Python</h3>
+        <ul>
+          <li>PyQt</li>
+          <li>Panda3D</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Video</h3>
+        <ul>
+          <li>Sony Vegas Pro</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </body>
 </html>
