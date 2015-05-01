@@ -76,7 +76,7 @@ section h1 {
   margin: 10px 0;
 }
 
-section article:nth-child(odd) {
+section article:nth-child(even) {
     background-color: #e3e3e3;
 }
 
@@ -98,8 +98,9 @@ section article p {
 }
 
 #musiclist li {
-    display: inline;
-    padding: 0 10px;
+    display: inline-block;
+  padding: 0 10px;
+  margin: 0 5px;
 }
 
 #tools {
@@ -110,7 +111,7 @@ section article p {
 }
 
 #tools div {
-    background-color: #e3e3e3;
+    background-color: #eeeeee;
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
