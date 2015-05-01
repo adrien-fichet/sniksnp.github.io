@@ -5,7 +5,7 @@ body {
     font-size: 18px;
     color: #333333;
     line-height: 30px;
-    /*background-color: #eeeeee;*/
+    background-color: #eeeeee;
     max-width: 800px;
     margin: auto;
     word-wrap: break-word;
@@ -71,12 +71,17 @@ header div:nth-child(2) {
     }
 }
 
-section {
-    padding: 10px;
+section h1 {
+  padding: 0 10px;
+  margin: 10px 0;
 }
 
-section:nth-child(even) {
-    /*background-color: #e3e3e3;*/
+section article:nth-child(odd) {
+    background-color: #e3e3e3;
+}
+
+section article {
+  padding: 10px;
 }
 
 section article h3 {
@@ -94,7 +99,7 @@ section article p {
 
 #musiclist li {
     display: inline;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 #tools {
@@ -105,7 +110,7 @@ section article p {
 }
 
 #tools div {
-    background-color: #eeeeee;
+    background-color: #e3e3e3;
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
