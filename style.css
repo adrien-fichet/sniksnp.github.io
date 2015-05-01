@@ -76,7 +76,7 @@ section h1 {
   margin: 10px 0;
 }
 
-section article:nth-child(even) {
+section article:nth-child(odd) {
   background-color: #e3e3e3;
 }
 
@@ -111,7 +111,7 @@ section article p {
 }
 
 #tools div {
-  background-color: #eeeeee;
+  background-color: #e3e3e3;
   padding: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
