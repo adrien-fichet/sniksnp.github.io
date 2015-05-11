@@ -19,7 +19,7 @@ img {
 }
 
 article {
-  padding: 0 10px;
+  padding: 10px 20px;
   margin: 10px 5px;
 }
 
@@ -83,9 +83,8 @@ header h1, header p {
 
 /* Boxes */
 article, #tools div {
-  -webkit-box-shadow: 5px 5px 20px 0 rgba(171,171,171,1);
-  -moz-box-shadow: 5px 5px 20px 0 rgba(171,171,171,1);
-  box-shadow: 5px 5px 20px 0 rgba(171,171,171,1);
-  border: 1px solid #D1D1D7;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
   background-color: white;
 }
